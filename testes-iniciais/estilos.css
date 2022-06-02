@@ -1,0 +1,36 @@
+body {
+    background-color: beige;
+}
+
+h1 {
+    color: rebeccapurple;
+    text-align: center;
+}
+
+p {
+    color: white;
+    background-color: #647ac3;
+    width: 50%;
+    height: 45px;
+    border: 10px dotted blue;
+    margin-top: 50px;
+    margin-left: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+button {
+    background-color: #647ac3;
+    color: white;
+    border: 1px solid #647ac3;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #4e69c1;
+}

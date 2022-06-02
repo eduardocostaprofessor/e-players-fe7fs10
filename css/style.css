@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url(../fonts/Roboto/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/* Reset de página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+            
+.container-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid salmon; */
+}
+ .header-flex { /* flex conteiner */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    height: 85px;
+}
+header {
+    background-color: #1E1C21;
+}
+
+header .logo {
+    /* border: 1px solid red; */
+    width: 280px;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid white; */
+    width: 60%;
+    height: 100%;
+}
+
+header .menu a {
+    font-family: "Roboto-Light";
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}
+
+/* 
+    Flexbox
+
+    Flexbox Froggy - joguinho do sapo
+    https://flexboxfroggy.com/
+
+    CSS Trics
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+    Mozzila MDN
+    https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
+    https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+    Origamid
+    https://origamid.com/projetos/flexbox-guia-completo/
+    
+*/
