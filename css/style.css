@@ -1,11 +1,39 @@
+/* 
+    Flexbox
+
+    Flexbox Froggy - joguinho do sapo
+    https://flexboxfroggy.com/
+
+    CSS Trics
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+    Mozzila MDN
+    https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
+    https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+
+    Origamid
+    https://origamid.com/projetos/flexbox-guia-completo/
+    
+    As 8 propriedades de background do css
+    https://www.maujor.com/tutorial/propriedade-css-para-estilizacao-de-background.php
+
+    Responsividade e media querie
+
+
+*/
+
+
+/* imports de fonts */
 @font-face {
     font-family: "Roboto-Thin";
     src: url(../fonts/Roboto/Roboto-Thin.ttf);
 }
+
 @font-face {
     font-family: "Roboto-Light";
     src: url(../fonts/Roboto/Roboto-Light.ttf);
 }
+
 @font-face {
     font-family: 'Roboto-Regular';
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
@@ -15,23 +43,30 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Roboto-Regular';
 
-            
+}
+
 .container-grid {
     max-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid salmon; */
 }
- .header-flex { /* flex conteiner */
+
+/* cabeçalho */
+.header-flex {
+    /* flex conteiner */
     display: flex;
     justify-content: space-between;
     align-items: center;
     align-items: center;
     height: 85px;
 }
+
 header {
     background-color: #1E1C21;
 }
@@ -58,20 +93,75 @@ header .menu a {
 
 }
 
-/* 
-    Flexbox
+/* banner */
 
-    Flexbox Froggy - joguinho do sapo
-    https://flexboxfroggy.com/
+.banner {
+    width: 100%;/*  não precisaria!! */
+    height: 600px;
+    background-image: url(../images/banner_pilotos.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: blueviolet;
+}
 
-    CSS Trics
-    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+/* centraliza a informação do banner */
+.banner .banner-info-box {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 600px;
+}
 
-    Mozzila MDN
-    https://developer.mozilla.org/pt-BR/docs/Learn/CSS/CSS_layout/Flexbox
-    https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox
+.banner .banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 500px;
+    height: 250px;
+    /* border: 1px solid white; */
+}
 
-    Origamid
-    https://origamid.com/projetos/flexbox-guia-completo/
-    
-*/
+.banner .banner-info .info-title {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.banner .banner-info .info-text {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: -50px;
+}
+
+
+.banner .banner-info .info-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    border: 1px solid #E71A3F;
+    background-color: #E71A3F;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    width: 250px;
+    height: 45px;
+    margin: 0 auto;
+}
+
+/* patrocinadores */
+.patrocinados {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #1E1C21;
+}
+
+.patrocinados-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: #5c5858; */
+}

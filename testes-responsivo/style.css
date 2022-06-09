@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* mobile first */
+
+body {
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+}
+
+p {
+    display: none;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+
+/* BREAKPOINTS */
+
+/* Tablets */
+@media screen and (min-width: 768px) {
+    h1 {
+        color: darkblue;
+        font-size: 40px;
+    }
+
+    p {
+        display: block;
+        font-size: 28px;
+    }
+}
+
+/* desktops */
+@media screen and (min-width: 992px) {
+    .container-grid {
+        max-width: 900px;
+        margin: 0 auto;
+        border: 1px solid red;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+/* notebooks ou telas largas */
+@media screen and (min-width: 1200px) {
+    body {
+        background-color: bisque;
+    }
+}
+
+/* Tela full hd (1920px) */
+@media screen and (min-width: 1440px) {
+    
+}
