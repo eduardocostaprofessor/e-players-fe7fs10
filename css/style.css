@@ -39,6 +39,11 @@
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
 /* Reset de página */
 * {
     margin: 0;
@@ -48,13 +53,17 @@
 
 body {
     font-family: 'Roboto-Regular';
-
+    color: white; /* herança */
 }
 
 .container-grid {
     max-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid salmon; */
+}
+
+.container {
+    max-width: 1200px;
 }
 
 /* cabeçalho */
@@ -99,7 +108,7 @@ header .menu a {
     width: 100%;/*  não precisaria!! */
     height: 600px;
     background-image: url(../images/banner_pilotos.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: blueviolet;
 }
@@ -164,4 +173,24 @@ header .menu a {
     justify-content: space-between;
     align-items: center;
     /* background-color: #5c5858; */
+}
+
+/* SESSÃO PRODUTOS */
+.produtos {
+    background-color: #1E1C21;
+     
+}
+.produtos h2 {
+    font-family: 'Roboto-Medium';
+    margin-bottom: 20px;
+}
+
+.card {
+    max-width: 230px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom, #000000, #1E1C21);
+}
+
+.card .card-title {
+    font-family: 'Roboto-Medium';
 }
