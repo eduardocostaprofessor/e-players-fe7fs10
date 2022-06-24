@@ -39,6 +39,11 @@
     src: url(../fonts/Roboto/Roboto-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'Roboto-Medium';
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
 /* Reset de página */
 * {
     margin: 0;
@@ -48,9 +53,11 @@
 
 body {
     font-family: 'Roboto-Regular';
-
+    color: white;
+    /* herança */
 }
 
+<<<<<<< HEAD
 /* CUSTOMIZAÇÃO GERAL DO BOOTSTRAP */
 
 .container {
@@ -60,12 +67,22 @@ body {
 .card {
     margin-bottom: 20px;
 }
+=======
+/* Customização do Bootstrap */
+
+/* CSS FEITO PARAO DESKTOP */
+
+>>>>>>> 12f149f2d980e50c1c3f8fd0e3649c7043664fc4
 
 
 .container-grid {
     max-width: 1200px;
     margin: 0 auto;
     /* border: 1px solid salmon; */
+}
+
+.container {
+    max-width: 1200px;
 }
 
 /* cabeçalho */
@@ -104,13 +121,17 @@ header .menu a {
 
 }
 
+header .menu-bars {
+    display: none;
+}
 /* banner */
 
 .banner {
-    width: 100%;/*  não precisaria!! */
+    width: 100%;
+    /*  não precisaria!! */
     height: 600px;
     background-image: url(../images/banner_pilotos.png);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: blueviolet;
 }
@@ -177,9 +198,157 @@ header .menu a {
     /* background-color: #5c5858; */
 }
 
+<<<<<<< HEAD
 
 /* **************PRODUTOS************* */
 
 .produtos {
     background-color: #1E1C21;
+=======
+/* SESSÃO PRODUTOS */
+.produtos {
+    background-color: #1E1C21;
+    padding: 30px 0;
+
+}
+
+.produtos h2 {
+    font-family: 'Roboto-Medium';
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.card {
+    max-width: 250px;
+    margin-bottom: 20px;
+    background-image: linear-gradient(to bottom, #000000, #1E1C21);
+}
+
+.card .card-title {
+    font-family: 'Roboto-Medium';
+    /* text-transform: uppercase; */
+}
+
+.card .card-price {
+    font-size: 1.4rem;
+    font-family: 'Roboto-Medium';
+}
+
+.card .btn-buy {
+    background-color: #C31616;
+    border: 1px solid #C31616;
+
+    width: 100%;
+    /* text-transform: uppercase; */
+}
+
+.card .card-title,
+.card .btn-buy {
+    text-transform: uppercase;
+}
+
+
+/* apagar */
+.bordas {
+    border: 3px solid green;
+}
+
+
+/* BREAKPOINTS */
+/* 
+    celulares 0 - 767px
+    tablets 768px - 991px
+    desktop >= 992px - 1199px
+    telas granes >= 1200px - 1920px
+
+*/
+
+/* DESKTOP tablets 992px - 1199px */
+@media all and (max-width: 1199px) {
+
+    .container,
+    .container-grid {
+        max-width: 980px;
+    }
+}
+
+/* TABLETS tablets 768px - 991px*/
+@media all and (max-width: 991px) {
+    header .logo {
+        width: 230px;
+        margin-left: 15px;
+    }
+
+    
+    /* navbar */
+    header .menu {
+        position: fixed;
+        /* referência viewport */
+        top: 0px;
+        /* coordenadas de posicinoamento */
+        left: -80%;
+        z-index: 100; /* controle de camada */
+
+        opacity: 0; /* invisível  */
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+        width: 80%;
+        height: 100%;
+
+        padding: 20px 50px;
+        background-color: rgba(195, 22, 22, 0.98);
+        border-radius: 0 0 0 90px;
+        transition: left 0.4s, opacity 0.5s;
+    }
+
+    header .menu a {
+        margin-bottom: 20px;
+        padding: 20px;
+        border-left: 3px dotted #AAB0AE;
+        font-size: 1.4rem;
+        color: #AAB0AE;
+    }
+
+    header .menu-bars {
+        display: block;
+        width: 40px;
+        margin-right: 15px;
+        color: white;
+    }
+    
+    .mostraEscondeMenu {
+        left: 0 !important;
+        opacity: 1 !important; /* visível */
+    }
+
+    .patrocinados {
+        display: none;
+    }
+}
+
+
+/* SMARTPHONES celulares 0 - 767px */
+@media all and (max-width: 767px) {
+    
+    .header-flex {
+        height: 65px;
+    }
+    
+    header .menu-bars {
+        width: 25px;
+    }
+
+    header .logo {
+        width: 180px;
+    }
+
+    header .menu a {
+        margin-bottom: 10px;
+        padding: 10px;
+        border-left: 2px dotted #AAB0AE;
+        font-size: 1rem;
+    }
+>>>>>>> 12f149f2d980e50c1c3f8fd0e3649c7043664fc4
 }
