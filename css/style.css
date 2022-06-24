@@ -51,6 +51,17 @@ body {
 
 }
 
+/* CUSTOMIZAÇÃO GERAL DO BOOTSTRAP */
+
+.container {
+    max-width: 1200px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+
 .container-grid {
     max-width: 1200px;
     margin: 0 auto;
@@ -164,4 +175,11 @@ header .menu a {
     justify-content: space-between;
     align-items: center;
     /* background-color: #5c5858; */
+}
+
+
+/* **************PRODUTOS************* */
+
+.produtos {
+    background-color: #1E1C21;
 }

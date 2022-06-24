@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .formulario {
+            width: 50vw;
+            height: 50vh;
+            margin: 0 auto;
+
+            background-color: aqua;
+        }
+
+        .linha {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            /* background-color: rgb(243, 215, 215); */
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .rotulo-campo {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            width: 49%;
+            height: 60px;
+            /* background-color: purple; */
+            /* color: white; */
+        }
+
+        .rotulo-campo input,
+        .rotulo-campo select {
+            height: 40px;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form action="" class="formulario">
+        <div class="linha">
+
+            <div class="rotulo-campo">
+                <label for="">Nome Completo</label>
+                <input type="text">
+
+            </div>
+
+            <div class="rotulo-campo">
+                <label for="">Sexo</label>
+                <select>
+                    <option value="">Escolha</option>
+                    <option value="mas">Masculino</option>
+                    <option value="fer">Feminino</option>
+                    <option value="nif">Não Informado</option>
+                </select>
+            </div>
+
+        </div>
+
+
+        <div class="linha">
+            <div class="rotulo-campo">
+                <label for="">CPF</label>
+                <input type="number">
+            </div>
+
+            <div class="rotulo-campo">
+                <label for="">RG</label>
+                <input type="number">
+            </div>
+
+            <div class="rotulo-campo">
+                <label for="">Nascimento</label>
+                <input type="number">
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </form>
+
+</body>
+
+</html>

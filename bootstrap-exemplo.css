@@ -1,0 +1,23 @@
+.btn-warning {
+    background-color: #816900;
+    color: white;
+    border: 1px solid #816900;
+}
+
+.container {
+    max-width: 1200px;
+    border: 1px solid red;
+}
+
+.container-fluid {
+    border: 1px solid red;
+}
+
+.caixa {
+    margin-bottom: 10px;
+}
+
+.card {
+    background-color: black;
+    color: white;
+}
