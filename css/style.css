@@ -57,22 +57,10 @@ body {
     /* herança */
 }
 
-<<<<<<< HEAD
-/* CUSTOMIZAÇÃO GERAL DO BOOTSTRAP */
-
-.container {
-    max-width: 1200px;
-}
-
-.card {
-    margin-bottom: 20px;
-}
-=======
 /* Customização do Bootstrap */
 
 /* CSS FEITO PARAO DESKTOP */
 
->>>>>>> 12f149f2d980e50c1c3f8fd0e3649c7043664fc4
 
 
 .container-grid {
@@ -198,13 +186,6 @@ header .menu-bars {
     /* background-color: #5c5858; */
 }
 
-<<<<<<< HEAD
-
-/* **************PRODUTOS************* */
-
-.produtos {
-    background-color: #1E1C21;
-=======
 /* SESSÃO PRODUTOS */
 .produtos {
     background-color: #1E1C21;
@@ -350,5 +331,4 @@ header .menu-bars {
         border-left: 2px dotted #AAB0AE;
         font-size: 1rem;
     }
->>>>>>> 12f149f2d980e50c1c3f8fd0e3649c7043664fc4
 }
