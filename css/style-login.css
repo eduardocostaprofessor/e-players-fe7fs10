@@ -1,0 +1,111 @@
+/* imports de fonts */
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* flex para centralizar o formulário */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    /* border: 10px solid green; */
+
+    background-color: #3A404E;
+    color: white;
+    font-family: "Roboto-Regular";
+}
+
+
+/* mobile first */
+
+.container {
+    width: 100%;
+    max-width: 315px;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+    
+    
+}
+
+.voltar {
+    margin-bottom: 60px
+}
+
+.titulo {
+    margin-bottom: 100px;
+}
+
+.linha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ababab;
+
+}
+
+/* pinta a borda somente da primeira linha */
+.linha:first-of-type {
+    border-bottom: 1px solid #a0824d;
+}
+
+.linha input {
+    height: 40px;
+    width: 90%;
+    color: #ababab;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.linha input::placeholder {
+    color: #ababab;
+}
+
+.mensagem {
+    text-align: center;
+    color: #c67187;
+    height: 25px;
+}
+
+.signin {
+    display: block;
+    width: 80%;
+    margin: 25px auto 0;
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 1.2rem;
+    font-family: "Roboto-Regular";
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Tablet */
+@media screen and (min-width: 768px ) {
+    .container {
+        max-width: 600px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    
+}
+
+/* Tablet */
+@media screen and (min-width: 992px ) {
+    .container {
+        max-width: 900px;
+    }
+}

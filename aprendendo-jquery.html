@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery em Ação</title>
+</head>
+<body>
+    <h1>Hello World <span id="texto"></span></h1>
+    <input type="text" id="nome" placeholder="Digite seu Nome">
+
+    <button id="btnHello">Hello</button>
+    <button class="btnHelloNome">Hello Nome</button>
+    <button class="btnHelloNome">Hello Nome 1</button>
+    <button class="btnHelloNome">Hello Nome 2</button>
+    <button class="btnHelloNome">Hello Nome 3</button>
+    <br><br>
+
+    <label for="telefone">Telefone</label>
+    <input type="text" id="telefone">
+    <br>
+
+    <label for="celular">Celular</label>
+    <input type="text" id="celular">
+    <br>
+    
+    <!-- biblioteca jquey -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- jquery mask https://igorescobar.github.io/jQuery-Mask-Plugin/ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js"></script>
+
+
+    <!-- javascript do programador -->
+    <script>
+        // quando a página estiver disponível/carregada
+        $(document).ready(function(){
+            
+            //sintaxe jQuery utiliza seletores CSS
+            $(".btnHelloNome").click(function () {
+                   let nome = $("#nome").val()
+                   $("#texto").text(`${nome} !`)
+            })
+
+            $("#btnHello").click(function(){
+                $("h1 span").text("!");
+            })
+
+            // $("button, input").mousemove(function(){
+            //     hello();
+            // });
+
+            // ************** USO DO JQUERY MASK ******************
+            $("#telefone").mask("(00) 0000-0000")
+            $("#celular").mask("(00) 00000/0000")
+
+        })
+
+
+
+
+
+        function hello() {
+            alert("Hello World")
+        }
+    </script>
+</body>
+</html>
