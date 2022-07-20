@@ -32,7 +32,7 @@ $(document).ready(function(){
         
         // //pegar os dados dos campos
         
-        let cpf = $("#cpf").val();
+        let nome = $("#nome").val();
         let usuario = $("#usuario").val();
         let senha = $("#senha").val();
 
